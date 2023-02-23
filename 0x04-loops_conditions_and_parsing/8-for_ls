@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 #Bash script that display content in a directory in a list format
-dir='ls /0x04-loops_conditions_and_parsing/*'
-for el in $dir;
+for el in *;
 do
-echo "$el"
+if []
 done
