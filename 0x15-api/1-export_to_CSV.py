@@ -17,9 +17,9 @@ def main():
     with open(filename, "w", newline='') as csvfile:
         for task in task_res.json():
             if task.get("userId") == int(argv[1]):
-                    writer = csv.writer(csvfile, quoting=csv.QUOTE_ALL)
-                    writer.writerow([argv[1], employee_name, task.get(
-                        "completed"), task.get("title")])
+                writer = csv.writer(csvfile, quoting=csv.QUOTE_ALL)
+                writer.writerow([argv[1], employee_name, task.get(
+                    "completed"), task.get("title")])
 
 
 if __name__ == "__main__":
